@@ -1,0 +1,5 @@
+apartment\ApartmentTest.class
+commands\FindApplianceCommandTest.class
+commands\SortCommandTest.class
+commands\CalculatePowerCommandTest.class
+commands\ShowPluggedInCommandTest.class
