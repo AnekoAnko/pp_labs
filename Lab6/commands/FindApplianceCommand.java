@@ -19,11 +19,11 @@ public class FindApplianceCommand implements Command {
         int minPower = scanner.nextInt();
         System.out.print("Enter maximum power: ");
         int maxPower = scanner.nextInt();
-        apartment.findApplianceByPowerRange(minPower, maxPower);
+        System.out.println(apartment.findApplianceByPowerRange(minPower, maxPower));
     }
 
     @Override
     public String description() {
-        return "Find appliance by power range"; 
+        return "Find appliances by power range"; 
     }
 }

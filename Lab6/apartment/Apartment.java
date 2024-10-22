@@ -47,12 +47,10 @@ public class Apartment {
         appliances.sort(ascending ? Comparator.comparingInt(Appliance::getPower) :
                 Comparator.comparingInt(Appliance::getPower).reversed());
     }
-
-    public Appliance findApplianceByPowerRange(int minPower, int maxPower) {
+    public List<Appliance> findApplianceByPowerRange(int minPower, int maxPower) {
         return appliances.stream()
                 .filter(appliance -> appliance.getPower() >= minPower && appliance.getPower() <= maxPower)
-                .findFirst()
-                .orElse(null);
+                .collect(Collectors.toList());
     }
 
     public List<Appliance> getAppliances() {

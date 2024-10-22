@@ -22,9 +22,9 @@ public class Main {
         Apartment apartment = new Apartment();
         Scanner scanner = new Scanner(System.in);
 
-        apartment.addAppliance(new WashingMachine("Washing Machine", 2000));
-        apartment.addAppliance(new Fridge("Fridge", 150));
-        apartment.addAppliance(new TV("Television", 100));
+        apartment.addAppliance(new WashingMachine("Washing Machine", 2000, true));
+        apartment.addAppliance(new Fridge("Fridge", 150, false));
+        apartment.addAppliance(new TV("Television", 100, true));
 
         Invoker invoker = new Invoker();
 

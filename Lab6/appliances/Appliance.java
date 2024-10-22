@@ -5,10 +5,10 @@ public abstract class Appliance {
     private int power;
     private boolean pluggedIn;
 
-    public Appliance(String name, int power) {
+    public Appliance(String name, int power, boolean pluggedIn) {
         this.name = name;
         this.power = power;
-        this.pluggedIn = false;
+        this.pluggedIn = pluggedIn;
     }
 
     public String getName() {
